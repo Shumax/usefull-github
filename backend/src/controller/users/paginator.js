@@ -1,11 +1,18 @@
-const octoConfig = require('../../services/config')
+const octoService = require('../../services/github')
 
 module.exports = async function paginator(req, res) {
-  const data = await octoConfig.request('GET /users?per_page=1&since=0', {
-    headers: {
-      'X-GitHub-Api-Version': '2022-11-28'
-    }
-  })
+  const { since } = req.query
 
-  return res.send(data.data)
+  try {
+    
+    console.log(since)
+
+    const data = await octoService.listAllUsers(since)
+
+    return res.status(202).send(data)
+
+  } catch (err) {
+    return res.status(400).json({ message: err })
+  }
+
 }
