@@ -13,10 +13,10 @@
 /frontend/yarn-error.log
 
 # IDEs and editors
-./frontend/idea/
-./frontend/project
-./frontend/classpath
-./frontend/c9/
+/frontend/idea/
+/frontend/project
+/frontend/classpath
+/frontend/c9/
 /frontend/*.launch
 /frontend/.settings/
 /frontend/*.sublime-workspace
@@ -41,3 +41,5 @@
 # System files
 /frontend/.DS_Store
 /frontend/Thumbs.db
+
+/frontend/.angular
