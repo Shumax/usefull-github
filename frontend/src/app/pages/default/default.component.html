@@ -1,3 +1,24 @@
 <main>
+  <div *ngIf="!loading;else grid">Loading...</div>
   
+  <ng-template #grid>
+    <mat-grid-list [cols]="breakpoint" rowHeight="10rem" >
+      <mat-grid-tile *ngFor="let user of users.data">
+        <mat-card class="card">
+          <div class="box-image">
+            <div class="image" [ngStyle]="{'background-image': 'url(' + user.avatar_url + ')'}"></div>
+          </div>
+          <div class="content">
+            <span>ID: <b>{{user.id}}</b></span>
+            <span>LOGIN: <b>{{user.login}}</b></span>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-paginator 
+      [length]="10"
+      [pageSize]="5"
+    >
+    </mat-paginator>
+  </ng-template>
 </main>

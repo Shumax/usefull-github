@@ -1,5 +1,35 @@
 main {
   width: 100vw;
   height: 100vh;
-  background: url(/assets/github-back.svg) center right / 25% no-repeat;
+  background: url(/assets/github-back.svg) center right / 35% no-repeat;
+
+  & .card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 90%;
+
+    & .box-image {
+      display: flex;
+      align-items: center;
+
+      & .image {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
+        border: 1px solid;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    } 
+
+    & .content {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      justify-content: center;
+    }
+  }
 }

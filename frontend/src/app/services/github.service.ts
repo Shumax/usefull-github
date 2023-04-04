@@ -12,8 +12,8 @@ export class GithubService {
 
   constructor(private http: HttpClient) { }
 
-  allUsers(since: number = 0) {
-    return this.http.get(`${this.baseURL}/api/users?since=${since}`)
+  allUsers(since: number = 0, limit: number = 10) {
+    return this.http.get(`${this.baseURL}/api/users?since=${since}&limit=${limit}`)
   }
 
   details(username: string) {
