@@ -21,8 +21,8 @@ async function getOneUser(name) {
   })
 }
 
-async function getPublicRepos(name) {
-  return await octokit.request(`GET /users/${name}/repos`, {
+async function getPublicRepos(name, page, offset) {
+  return await octokit.request(`GET /users/${name}/repos?page=${page}&per_page=${offset}`, {
     username: 'USERNAME',
     headers: {
       'X-GitHub-Api-Version': '2022-11-28'
