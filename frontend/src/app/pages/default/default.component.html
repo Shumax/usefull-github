@@ -4,7 +4,7 @@
   <ng-template #grid>
     <mat-grid-list [cols]="breakpoint" rowHeight="10rem" >
       <mat-grid-tile *ngFor="let user of users.data">
-        <mat-card class="card">
+        <mat-card class="card" (click)="handleUserDetail(user)">
           <div class="box-image">
             <div class="image" [ngStyle]="{'background-image': 'url(' + user.avatar_url + ')'}"></div>
           </div>

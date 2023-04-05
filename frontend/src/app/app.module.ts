@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,13 +11,15 @@ import { DefaultComponent } from './pages/default/default.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { DetailComponent } from './pages/detail/detail.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DefaultComponent
+    DefaultComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     HttpClientModule,
     MatPaginatorModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

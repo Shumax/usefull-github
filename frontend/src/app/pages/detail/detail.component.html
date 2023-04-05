@@ -1,0 +1,12 @@
+<main>
+  <mat-card>
+    <div class="avatar" [ngStyle]="{'background-image': 'url(' + $user.data?.avatar_url + ')'}"></div>
+    <div class="p">
+      <h2><b>{{$user.data?.name}}</b></h2>
+      <h4>{{$user.data?.login}}</h4>
+      <p>{{$user.data?.bio}}</p>
+      <a [href]="$user.data?.html_url" target="_blank">Profile on Github</a>
+      <p>Since: {{formatDate($user.data?.created_at)}}</p>
+    </div>
+  </mat-card>
+</main>

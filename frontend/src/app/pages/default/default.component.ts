@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 import { GithubService } from './../../services/github.service';
 
 @Component({
@@ -16,7 +18,11 @@ export class DefaultComponent implements OnInit {
   pg: number = 0
   limit: number = 12
 
-  constructor(private githubService: GithubService) {
+  constructor(
+    private githubService: GithubService, 
+    private userService: UserService,
+    private router: Router
+  ) {
     if(window.screen.width < 780) this.breakpoint = 1
   }
 
@@ -25,6 +31,13 @@ export class DefaultComponent implements OnInit {
       this.users = res
       this.loading = true
     })
+  }
+
+  handleUserDetail(user: any): void {
+    this.githubService.details(user.login).subscribe(res => {
+      this.userService.setValueUser(res)
+    })
+    this.router.navigate(['info'])
   }
 
 }
