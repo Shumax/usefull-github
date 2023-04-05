@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageEvent } from '@angular/material/paginator';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { GithubService } from './../../services/github.service';
@@ -27,6 +28,10 @@ export class DefaultComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.list()
+  }
+
+  list() {
     this.githubService.allUsers(this.pg, this.limit).subscribe(res => {
       this.users = res
       this.loading = true
@@ -42,7 +47,12 @@ export class DefaultComponent implements OnInit {
       this.userService.setValueRepos(res)
       this.router.navigate(['info'])
     })
+  }
 
+  handlePageEvent(e: PageEvent) {
+    this.pg = e.pageIndex
+    this.list()
+    console.log(e)
   }
 
 }

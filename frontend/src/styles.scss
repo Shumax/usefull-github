@@ -7,3 +7,7 @@ main {
   height: 100vh;
   background: url(/assets/github-back.svg) center right / 35% no-repeat;
 }
+
+.mat-mdc-paginator-range-label, .mat-mdc-paginator-page-size {
+  display: none!important;
+}

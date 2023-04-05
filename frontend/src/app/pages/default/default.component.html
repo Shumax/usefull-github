@@ -16,8 +16,11 @@
       </mat-grid-tile>
     </mat-grid-list>
     <mat-paginator 
-      [length]="10"
+      [length]="100"
       [pageSize]="5"
+      [hidePageSize]="false"
+      [pageIndex]="0"
+      (page)="handlePageEvent($event)"
     >
     </mat-paginator>
   </ng-template>
