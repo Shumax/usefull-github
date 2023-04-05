@@ -2,6 +2,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 25%;
 
   & mat-card {
     margin: 1rem;
@@ -27,4 +28,10 @@ main {
     width: 90%;
     margin-bottom: 1rem;
   }
+}
+
+.mat-mdc-raised-button {
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
 }
