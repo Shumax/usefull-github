@@ -4,8 +4,8 @@ const octokit = new octo.Octokit({
   auth: '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'
 })
 
-async function listAllUsers(number) {
-  return await octokit.request(`GET /users?since=${number}`, {
+async function listAllUsers(number, offset) {
+  return await octokit.request(`GET /users?since=${number}&per_page=${offset}`, {
     headers: {
       'X-GitHub-Api-Version': '2022-11-28'
     }
