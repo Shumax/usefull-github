@@ -2,13 +2,13 @@
 
 #### Challenge resulution:
 
-[![Recording Running](capture.png)](https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1)
+[![Recording Running](capture.png)](https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1){:target="_blank"}
 
 
-> This is a simple Full-Stack demo deployed using [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript), [TypeScript](https://www.typescriptlang.org/), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and [SCSS](https://sass-lang.com/)
+> This is a simple Full-Stack demo deployed using [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript){:target="_blank"}, [TypeScript](https://www.typescriptlang.org/){:target="_blank"}, [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML){:target="_blank"} and [SCSS](https://sass-lang.com/){:target="_blank"}
 
-  - [Front End] in [Angular](https://angular.io/) with [Angular Material](https://material.angular.io/)
-  - [Back End] in [Node.js](https://nodejs.org/en) with [Express](https://expressjs.com/)
+  - [Front End] in [Angular](https://angular.io/){:target="_blank"} with [Angular Material](https://material.angular.io/){:target="_blank"}
+  - [Back End] in [Node.js](https://nodejs.org/en){:target="_blank"} with [Express](https://expressjs.com/){:target="_blank"}
 
 #### Challenge instructions:
 
