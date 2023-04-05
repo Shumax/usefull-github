@@ -10,6 +10,10 @@ import { UserService } from 'src/app/services/user.service';
 export class DetailComponent implements OnInit {
   
   $user!: any
+  $repos!: any
+
+  displayedColumns: string[] = ['id', 'name', 'url'];
+  dataSource: Array<any> = [];
 
   constructor(private userService: UserService, private router: Router) { }
 
@@ -18,11 +22,23 @@ export class DetailComponent implements OnInit {
       this.$user = data
       console.log(data)
 
-      // setTimeout(() => {
-      //   if(!Object.keys(data).length) this.router.navigate([''])
-      // }, 5000)
       if(!Object.keys(data).length) this.router.navigate([''])
+
     })
+
+    this.userService.getValueRepos().subscribe(data => {
+      this.$repos = data
+      
+      this.$repos?.data?.map((el:any) => {
+        console.log(el.id)
+        this.dataSource.push({
+          id: el.id,
+          name: el.full_name,
+          url: el.html_url
+        })
+      })
+    })
+
   }
 
 

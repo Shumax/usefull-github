@@ -37,7 +37,12 @@ export class DefaultComponent implements OnInit {
     this.githubService.details(user.login).subscribe(res => {
       this.userService.setValueUser(res)
     })
-    this.router.navigate(['info'])
+
+    this.githubService.repositories(user.login,0,10).subscribe(res => {
+      this.userService.setValueRepos(res)
+      this.router.navigate(['info'])
+    })
+
   }
 
 }
