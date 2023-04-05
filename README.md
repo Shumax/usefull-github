@@ -1,6 +1,6 @@
 ## Fullstack, Backend, Frontend - Challenge
 
-[![App Running](https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1)](https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1)
+[Recording Running](https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1)
 
 
 <!-- <div style="position: relative; padding-bottom: 53.125%; height: 0;"><iframe src="https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div> -->
