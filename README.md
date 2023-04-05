@@ -2,7 +2,7 @@
 
 #### Challenge resulution:
 
-[![Recording Running](capture.png)](https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1);
+[![Recording Running](capture.png)](https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1)
 
 
 > This is a simple Full-Stack demo deployed using [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript), [TypeScript](https://www.typescriptlang.org/), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and [SCSS](https://sass-lang.com/)
