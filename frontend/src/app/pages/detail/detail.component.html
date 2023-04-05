@@ -34,7 +34,11 @@
     </table>
   
     <mat-paginator 
-      showFirstLastButtons
+      [length]="sizeListTable"
+      [pageSize]="10"
+      [hidePageSize]="false"
+      [pageIndex]="0"
+      (page)="handlePageEvent($event)"
       aria-label="Select page of periodic elements">
     </mat-paginator>
   </div>
