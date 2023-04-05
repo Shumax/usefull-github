@@ -2,9 +2,10 @@
 
 #### Challenge resulution:
 
-[![Recording Running](https://raw.githubusercontent.com/Shumax/usefull-github/master/capture.png?token=GHSAT0AAAAAACA62N7NE3VDLVQLYZHXBHFCZBNLHKA)](https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1)
+[![Recording Running](https://raw.githubusercontent.com/Shumax/usefull-github/master/capture.png?token=GHSAT0AAAAAACA62N7NE3VDLVQLYZHXBHFCZBNLHKA)](https://www.loom.com/embed/4d9ee453ab8747ecba30185b2075cdb1);
 
-This is a simple Full-Stack demo deployed using [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript), [TypeScript](https://www.typescriptlang.org/), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and [SCSS](https://sass-lang.com/)
+
+> This is a simple Full-Stack demo deployed using [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript), [TypeScript](https://www.typescriptlang.org/), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and [SCSS](https://sass-lang.com/)
 
   - [Front End] in [Angular](https://angular.io/) with [Angular Material](https://material.angular.io/)
   - [Back End] in [Node.js](https://nodejs.org/en) with [Express](https://expressjs.com/)
